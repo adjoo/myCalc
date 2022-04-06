@@ -1,0 +1,49 @@
+body{
+    font-family: sans-serif;
+    background-color: #202429;
+    color: aliceblue;
+}
+
+.calc_row{
+    margin: .5rem auto;
+    max-width: 50rem;
+    outline: 1px solid #777;
+}
+.calc_header{
+
+}
+.calc_title{
+    margin: .5rem;
+}
+.calc_description{
+    margin: .5rem;
+}
+.calc_body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem
+}
+.calc_input_wrapper{
+    display: flex;
+    margin: .5rem;
+    align-items: center;
+    gap: .5rem
+}
+.argument_unit_of_measure{
+    order: 2;
+}
+.argument_input {
+    order: 1;
+}
+.argument_label{
+    order: 0;
+}
+.calc_result_wrapper{
+    display: flex;
+    margin: .5rem;
+    align-items: center;
+    gap: .5rem
+}
+.calc_result{
+
+}
