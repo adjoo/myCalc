@@ -54,7 +54,7 @@ input{
     gap: .5rem
 }
 .calc_result{
-    color: aliceblue;
+    color: white;
     font-weight: 700;
     background-color: #202429;
     border: 1px solid currentcolor;
