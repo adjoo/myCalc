@@ -3,6 +3,12 @@ body{
     background-color: #202429;
     color: aliceblue;
 }
+input{
+    background-color: aliceblue;
+    font-weight: 500;
+    max-width: 10ch;
+    padding: .1rem .4rem;
+}
 
 .calc_row{
     margin: .5rem auto;
@@ -37,6 +43,7 @@ body{
 }
 .argument_label{
     order: 0;
+    min-width: 4ch;
 }
 .calc_result_wrapper{
     display: flex;
@@ -45,5 +52,5 @@ body{
     gap: .5rem
 }
 .calc_result{
-
+    background-color: #aliceblue;
 }
