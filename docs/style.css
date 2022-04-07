@@ -45,7 +45,7 @@ input{
 }
 .argument_label{
     order: 0;
-    min-width: 4ch;
+    min-width: 3ch;
 }
 .calc_result_wrapper{
     display: flex;
