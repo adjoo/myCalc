@@ -47,10 +47,12 @@ input{
 }
 .calc_result_wrapper{
     display: flex;
-    margin: .5rem;
+    margin: .5rem 0 .5rem auto;
     align-items: center;
     gap: .5rem
 }
 .calc_result{
-    background-color: #aliceblue;
+    color: #aliceblue;
+    background-color: #202429;
+    border: 1px solid currentcolor;
 }
