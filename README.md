@@ -1,2 +1,2 @@
 # myCalc
-come userful calculations
+calculator
