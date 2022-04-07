@@ -55,7 +55,7 @@ input{
 }
 .calc_result{
     color: aliceblue;
-    font-weidht: 700;
+    font-weight: 700;
     background-color: #202429;
     border: 1px solid currentcolor;
     text-align: right;
