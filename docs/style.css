@@ -8,8 +8,8 @@ input{
     font-weight: 500;
     max-width: 10ch;
     padding: .2rem .4rem;
-    letter-spacing: .5px
-    text-align: center
+    letter-spacing: .5px;
+    text-align: center;
 }
 
 .calc_row{
@@ -58,5 +58,5 @@ input{
     font-weidht: 700;
     background-color: #202429;
     border: 1px solid currentcolor;
-    text-align: right
+    text-align: right;
 }
