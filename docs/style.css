@@ -49,7 +49,7 @@ input{
 }
 .calc_result_wrapper{
     display: flex;
-    margin-left: auto;
+    margin: .5rem .5rem auto .5rem;
     align-items: center;
     gap: .5rem
 }
