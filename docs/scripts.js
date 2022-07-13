@@ -35,3 +35,17 @@ calc_4.addEventListener('change', function(){
     var result = kWtValue / ((T2Value - T1Value) * 4183 * 1000 ) * 3600000;
     calc_4_result.value = result;
 })
+//calc check electric meter
+calc_5.addEventListener('change', function(){
+    var U = parseFloat(calc_5_arg_U.value);
+    var I = parseFloat(calc_5_arg_I.value);
+    var A = parseFloat(calc_5_arg_A.value);
+    var N = parseFloat(calc_5_arg_N.value);
+    var T = parseFloat(calc_5_arg_T.value);
+    var Pu = Math.round((3600 * N) / (A *T) *100)/100
+    var Pf = Math.round(U*I / 10)/100
+    var Pd = Math.round( Math.abs(Pf-Pu) / Pu *100 )
+    calc_5_result_u.value = Pu;
+    calc_5_result_f.value = Pf;
+    calc_5_result_d.value = Pd;
+})

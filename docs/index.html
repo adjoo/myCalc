@@ -16,100 +16,160 @@
 
 </head>
 <body>
-    <div class="calc_row">
-        <div class="calc_header">
-            <h2 class="calc_title">Перевод Гкал/ч в кВт</h2>
-            <h4 class="calc_description">1 гкал/час = 1 163 квт</h4>
+<div class="calc_row">
+    <div class="calc_header">
+        <h2 class="calc_title">Перевод Гкал/ч в кВт</h2>
+        <h4 class="calc_description">1 гкал/час = 1 163 квт</h4>
+    </div>
+    <div class="calc_body">
+        <div class="calc_input_wrapper">
+            <input class="argument_input" type="text" id="calc_1_arg_1" inputmode="decimal" autocomplete="off">
+            <label class="argument_label" for="calc_1_arg_1">Q:</label>
+            <div class="argument_unit_of_measure">Гкал/ч</div>
         </div>
-        <div class="calc_body">
+        <div class="calc_result_wrapper">
+            <div>Результат W:</div>
+            <input class="calc_result" id="calc_1_result" disabled/>
+            <div class="argument_unit_of_measure">кВт</div>
+        </div>
+    </div>
+</div>
+
+<div class="calc_row">
+    <div class="calc_header">
+        <h2 class="calc_title">Перевод кВт в Гкал/ч</h2>
+        <h4 class="calc_description">1 квт = 0.00086 гкал/час</h4>
+    </div>
+    <div class="calc_body">
+        <div class="calc_input_wrapper">
+            <input class="argument_input" type="text" id="calc_2_arg_1" inputmode="decimal" autocomplete="off">
+            <label class="argument_label" for="calc_2_arg_1">W:</label>
+            <div class="argument_unit_of_measure">кВт</div>
+        </div>
+        <div class="calc_result_wrapper">
+            <div>Результат Q:</div>
+            <input class="calc_result" id="calc_2_result" disabled/>
+            <div class="argument_unit_of_measure">Гкал/ч</div>
+        </div>
+    </div>
+</div>
+
+<div class="calc_row">
+    <div class="calc_header">
+        <h2 class="calc_title">Расчет из Гкал/ч в куб.м в час</h2>
+        <h4 class="calc_description">Q = 1000 * V / (T2 - T1)</h4>
+    </div>
+    <div class="calc_body" id="calc_3">
+        <div class="calc_input_wrapper">
+            <input class="argument_input" type="text" id="calc_3_arg_1" inputmode="decimal" autocomplete="off">
+            <label class="argument_label" for="calc_3_arg_1">Q:</label>
+            <div class="argument_unit_of_measure">Гкал/ч</div>
+        </div>
+        <div class="calc_input_wrapper">
+            <input class="argument_input" type="text" id="calc_3_arg_2" inputmode="decimal" autocomplete="off">
+            <label class="argument_label" for="calc_3_arg_1">T1:</label>
+            <div class="argument_unit_of_measure">°С</div>
+        </div>
+        <div class="calc_input_wrapper">
+            <input class="argument_input" type="text" id="calc_3_arg_3" inputmode="decimal" autocomplete="off">
+            <label class="argument_label" for="calc_3_arg_1">T2:</label>
+            <div class="argument_unit_of_measure">°С</div>
+        </div>
+        <div class="calc_result_wrapper">
+            <div>Результат G:</div>
+            <input class="calc_result" id="calc_3_result" disabled/>
+            <div class="argument_unit_of_measure">куб.м. в час</div>
+        </div>
+    </div>
+</div>
+
+<div class="calc_row">
+    <div class="calc_header">
+        <h2 class="calc_title">Расчет из кВт в куб.м в час</h2>
+        <h4 class="calc_description">W = V * C * P * (T2 - T1) / 3600000</h4>
+    </div>
+    <div class="calc_body" id="calc_4">
+        <div class="calc_input_wrapper">
+            <input class="argument_input" type="text" id="calc_4_arg_1" inputmode="decimal" autocomplete="off">
+            <label class="argument_label" for="calc_3_arg_1">W:</label>
+            <div class="argument_unit_of_measure">кВт</div>
+        </div>
+        <div class="calc_input_wrapper">
+            <input class="argument_input" type="text" id="calc_4_arg_2" inputmode="decimal" autocomplete="off">
+            <label class="argument_label" for="calc_3_arg_1">T1:</label>
+            <div class="argument_unit_of_measure">°С</div>
+        </div>
+        <div class="calc_input_wrapper">
+            <input class="argument_input" type="text" id="calc_4_arg_3" inputmode="decimal" autocomplete="off">
+            <label class="argument_label" for="calc_3_arg_1">T2:</label>
+            <div class="argument_unit_of_measure">°С</div>
+        </div>
+        <div class="calc_result_wrapper">
+            <div>Результат G:</div>
+            <input class="calc_result" id="calc_4_result" disabled/>
+            <div class="argument_unit_of_measure">куб.м. в час</div>
+        </div>
+    </div>
+</div>
+
+<div class="calc_row">
+    <div class="calc_header">
+        <h2 class="calc_title">Проверка работы электросчетчика</h2>
+        <h4 class="calc_description">Ру = (3600*N )/(A*T), Рф = U*I </h4>
+    </div>
+    <div class="calc_body" id="calc_5">
+        <div>
             <div class="calc_input_wrapper">
-                <input class="argument_input" type="text" id="calc_1_arg_1" inputmode="decimal" autocomplete="off">
-                <label class="argument_label" for="calc_1_arg_1">Q:</label>
-                <div class="argument_unit_of_measure">Гкал/ч</div>
+                <input class="argument_input" type="text" id="calc_5_arg_U" inputmode="decimal" autocomplete="off"
+                       value="230">
+                <label class="argument_label" for="calc_5_arg_U">U:</label>
+                <div class="argument_unit_of_measure">В</div>
             </div>
+            <div class="calc_input_wrapper">
+                <input class="argument_input" type="text" id="calc_5_arg_I" inputmode="decimal" autocomplete="off">
+                <label class="argument_label" for="calc_5_arg_I">I:</label>
+                <div class="argument_unit_of_measure">А</div>
+            </div>
+        </div>
+        <div>
+
+            <div class="calc_input_wrapper">
+                <input class="argument_input" type="text" id="calc_5_arg_N" inputmode="decimal" autocomplete="off"
+                       value="1">
+                <label class="argument_label" for="calc_5_arg_N">N:</label>
+                <div class="argument_unit_of_measure">Имп</div>
+            </div>
+            <div class="calc_input_wrapper">
+                <input class="argument_input" type="text" id="calc_5_arg_T" inputmode="decimal" autocomplete="off">
+                <label class="argument_label" for="calc_5_arg_T">T:</label>
+                <div class="argument_unit_of_measure">сек</div>
+            </div>
+            <div class="calc_input_wrapper">
+                <input class="argument_input" type="text" id="calc_5_arg_A" inputmode="decimal" autocomplete="off"
+                       value="3200">
+                <label class="argument_label" for="calc_5_arg_A">A:</label>
+                <div class="argument_unit_of_measure">Имп/(кВт*ч)</div>
+            </div>
+        </div>
+        <div>
             <div class="calc_result_wrapper">
-                <div>Результат W:</div>
-                <input class="calc_result" id="calc_1_result" disabled/>
+                <div>Результат Ру:</div>
+                <input class="calc_result" id="calc_5_result_u" disabled/>
                 <div class="argument_unit_of_measure">кВт</div>
             </div>
-        </div>
-    </div>
-
-    <div class="calc_row">
-        <div class="calc_header">
-            <h2 class="calc_title">Перевод кВт в Гкал/ч</h2>
-            <h4 class="calc_description">1 квт = 0.00086 гкал/час</h4>
-        </div>
-        <div class="calc_body">
-            <div class="calc_input_wrapper">
-                <input class="argument_input" type="text" id="calc_2_arg_1" inputmode="decimal" autocomplete="off">
-                <label class="argument_label" for="calc_2_arg_1">W:</label>
+            <div class="calc_result_wrapper">
+                <div>Результат Рф:</div>
+                <input class="calc_result" id="calc_5_result_f" disabled/>
                 <div class="argument_unit_of_measure">кВт</div>
             </div>
             <div class="calc_result_wrapper">
-                <div>Результат Q:</div>
-                <input class="calc_result" id="calc_2_result" disabled/>
-                <div class="argument_unit_of_measure">Гкал/ч</div>
+                <div>Результат погрешность:</div>
+                <input class="calc_result" id="calc_5_result_d" disabled/>
+                <div class="argument_unit_of_measure">%</div>
             </div>
         </div>
-    </div>
 
-    <div class="calc_row">
-        <div class="calc_header">
-            <h2 class="calc_title">Расчет из Гкал/ч в куб.м в час</h2>
-            <h4 class="calc_description">Q = 1000 * V / (T2 - T1)</h4>
-        </div>
-        <div class="calc_body" id="calc_3">
-            <div class="calc_input_wrapper">
-                <input class="argument_input" type="text" id="calc_3_arg_1" inputmode="decimal" autocomplete="off">
-                <label class="argument_label" for="calc_3_arg_1">Q:</label>
-                <div class="argument_unit_of_measure">Гкал/ч</div>
-            </div>
-            <div class="calc_input_wrapper">
-                <input class="argument_input" type="text" id="calc_3_arg_2" inputmode="decimal" autocomplete="off">
-                <label class="argument_label" for="calc_3_arg_1">T1:</label>
-                <div class="argument_unit_of_measure">°С </div>
-            </div>
-            <div class="calc_input_wrapper">
-                <input class="argument_input" type="text" id="calc_3_arg_3" inputmode="decimal" autocomplete="off">
-                <label class="argument_label" for="calc_3_arg_1">T2:</label>
-                <div class="argument_unit_of_measure">°С </div>
-            </div>
-            <div class="calc_result_wrapper">
-                <div>Результат G:</div>
-                <input class="calc_result" id="calc_3_result" disabled/>
-                <div class="argument_unit_of_measure">куб.м. в час</div>
-            </div>
-        </div>
     </div>
-
-    <div class="calc_row">
-        <div class="calc_header">
-            <h2 class="calc_title">Расчет из кВт в куб.м в час</h2>
-            <h4 class="calc_description">W = V * C * P * (T2 - T1) / 3600000</h4>
-        </div>
-        <div class="calc_body" id="calc_4">
-            <div class="calc_input_wrapper">
-                <input class="argument_input" type="text" id="calc_4_arg_1" inputmode="decimal" autocomplete="off">
-                <label class="argument_label" for="calc_3_arg_1">W:</label>
-                <div class="argument_unit_of_measure">кВт</div>
-            </div>
-            <div class="calc_input_wrapper">
-                <input class="argument_input" type="text" id="calc_4_arg_2" inputmode="decimal" autocomplete="off">
-                <label class="argument_label" for="calc_3_arg_1">T1:</label>
-                <div class="argument_unit_of_measure">°С </div>
-            </div>
-            <div class="calc_input_wrapper">
-                <input class="argument_input" type="text" id="calc_4_arg_3" inputmode="decimal" autocomplete="off">
-                <label class="argument_label" for="calc_3_arg_1">T2:</label>
-                <div class="argument_unit_of_measure">°С </div>
-            </div>
-            <div class="calc_result_wrapper">
-                <div>Результат G:</div>
-                <input class="calc_result" id="calc_4_result" disabled/>
-                <div class="argument_unit_of_measure">куб.м. в час</div>
-            </div>
-        </div>
-    </div>
+</div>
 </body>
 </html>
